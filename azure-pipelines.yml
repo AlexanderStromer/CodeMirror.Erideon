@@ -15,6 +15,7 @@ steps:
   inputs:
     command: 'pack'
     packagesToPack: '.nuspec'
+    nobuild: true
     versioningScheme: 'off'
 
 - task: DotNetCoreCLI@2
