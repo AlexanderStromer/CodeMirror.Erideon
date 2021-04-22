@@ -14,7 +14,7 @@ steps:
   displayName: Package NuPkg
   inputs:
     command: 'pack'
-    packagesToPack: '**/.nuspec'
+    packagesToPack: 'CodeMirror/CodeMirror.nuspec'
     configuration: 
     nobuild: true
     versioningScheme: 'off'
