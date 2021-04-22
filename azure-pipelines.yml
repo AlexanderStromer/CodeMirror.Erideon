@@ -14,7 +14,8 @@ steps:
   displayName: Package NuPkg
   inputs:
     command: 'pack'
-    packagesToPack: '.nuspec'
+    packagesToPack: '**/.nuspec'
+    configuration: 
     nobuild: true
     versioningScheme: 'off'
 
