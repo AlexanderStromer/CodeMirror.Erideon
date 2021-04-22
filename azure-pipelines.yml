@@ -10,13 +10,10 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- task: DotNetCoreCLI@2
-  displayName: Package NuPkg
+- task: NuGetCommand@2
   inputs:
     command: 'pack'
-    packagesToPack: 'CodeMirror/CodeMirror.nuspec'
-    configuration: 
-    nobuild: true
+    packagesToPack: '**/*.nuspec'
     versioningScheme: 'off'
 
 - task: DotNetCoreCLI@2
