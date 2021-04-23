@@ -10,6 +10,12 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'push'
+    packagesToPush: '$(Build.ArtifactStagingDirectory)/*.nupkg'
+    nuGetFeedType: 'internal'
+    publishVstsFeed: '180d461e-2d84-4145-9538-03e8dc0a39a1/939718a3-16e3-4547-a7f9-8b902a276d0c'
 - task: NuGetCommand@2
   inputs:
     command: 'pack'
