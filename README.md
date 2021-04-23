@@ -1,20 +1,29 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+# CodeMirror
+[![Build Status](https://travis-ci.org/codemirror/CodeMirror.svg)](https://travis-ci.org/codemirror/CodeMirror)
+[![NPM version](https://img.shields.io/npm/v/codemirror.svg)](https://www.npmjs.org/package/codemirror)
+[![Join the chat at https://gitter.im/codemirror/CodeMirror](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/codemirror/CodeMirror)  
+[Funding status: ![maintainer happiness](https://marijnhaverbeke.nl/fund/status_s.png?again)](https://marijnhaverbeke.nl/fund/)
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+CodeMirror is a versatile text editor implemented in JavaScript for
+the browser. It is specialized for editing code, and comes with over
+100 language modes and various addons that implement more advanced
+editing functionality. Every language comes with fully-featured code
+and syntax highlighting to help with reading and editing complex code.
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+A rich programming API and a CSS theming system are available for
+customizing CodeMirror to fit your application, and extending it with
+new functionality.
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+You can find more information (and the
+[manual](http://codemirror.net/doc/manual.html)) on the [project
+page](http://codemirror.net). For questions and discussion, use the
+[discussion forum](https://discuss.codemirror.net/).
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+See
+[CONTRIBUTING.md](https://github.com/codemirror/CodeMirror/blob/master/CONTRIBUTING.md)
+for contributing guidelines.
+
+The CodeMirror community aims to be welcoming to everybody. We use the
+[Contributor Covenant
+(1.1)](http://contributor-covenant.org/version/1/1/0/) as our code of
+conduct.
