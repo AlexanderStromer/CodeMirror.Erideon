@@ -1,6 +1,8 @@
 // CodeMirror, copyright (c) by Marijn Haverbeke and others
 // Distributed under an MIT license: https://codemirror.net/LICENSE
 
+var mac = /Mac/.test(navigator.platform);
+
 (function(mod) {
   if (typeof exports == "object" && typeof module == "object") // CommonJS
     mod(require("../../lib/codemirror"));
@@ -167,8 +169,6 @@
       Tab: handle.pick,
       Esc: handle.close
     };
-
-    var mac = /Mac/.test(navigator.platform);
 
     if (mac) {
       baseMap["Ctrl-P"] = function() {handle.moveFocus(-1);};

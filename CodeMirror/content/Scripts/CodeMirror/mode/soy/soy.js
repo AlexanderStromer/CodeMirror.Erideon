@@ -13,7 +13,7 @@
 
   var indentingTags = ["template", "literal", "msg", "fallbackmsg", "let", "if", "elseif",
                        "else", "switch", "case", "default", "foreach", "ifempty", "for",
-                       "call", "param", "deltemplate", "delcall", "log", "element"];
+                       "call", "param", "deltemplate", "delcall", "log"];
 
   CodeMirror.defineMode("soy", function(config) {
     var textMode = CodeMirror.getMode(config, "text/plain");
@@ -328,7 +328,7 @@
             if (!state.scopes) {
               state.variables = prepend(null, 'ij');
             }
-          } else if (state.tag.match(/^@(?:param\??|inject|state)/)) {
+          } else if (state.tag.match(/^@(?:param\??|inject|prop)/)) {
             state.soyState.push("param-def");
           } else if (state.tag.match(/^(?:param)/)) {
             state.soyState.push("param-ref");

@@ -3286,6 +3286,7 @@
           { width = cur.text.firstChild.getBoundingClientRect().right - box.left - 1; }
       }
       var diff = cur.line.height - height;
+      if (height < 2) { height = textHeight(display); }
       if (diff > .005 || diff < -.005) {
         updateLineHeight(cur.line, height);
         updateWidgetHeight(cur.line);
@@ -7839,7 +7840,7 @@
       delayingBlurEvent: false,
       focused: false,
       suppressEdits: false, // used to disable editing during key handlers when in readOnly mode
-      pasteIncoming: -1, cutIncoming: -1, // help recognize paste/cut edits in input.poll
+      pasteIncoming: false, cutIncoming: false, // help recognize paste/cut edits in input.poll
       selectingText: false,
       draggingText: false,
       highlight: new Delayed(), // stores highlight worker timeout
@@ -8072,8 +8073,7 @@
     cm.display.shift = false;
     if (!sel) { sel = doc.sel; }
 
-    var recent = +new Date - 200;
-    var paste = origin == "paste" || cm.state.pasteIncoming > recent;
+    var paste = cm.state.pasteIncoming || origin == "paste";
     var textLines = splitLinesAuto(inserted), multiPaste = null;
     // When pasting N lines into N selections, insert one line per selection
     if (paste && sel.ranges.length > 1) {
@@ -8102,7 +8102,7 @@
           { from = to = Pos(from.line, 0); }
       }
       var changeEvent = {from: from, to: to, text: multiPaste ? multiPaste[i$1 % multiPaste.length] : textLines,
-                         origin: origin || (paste ? "paste" : cm.state.cutIncoming > recent ? "cut" : "+input")};
+                         origin: origin || (paste ? "paste" : cm.state.cutIncoming ? "cut" : "+input")};
       makeChange(cm.doc, changeEvent);
       signalLater(cm, "inputRead", cm, changeEvent);
     }
@@ -8112,7 +8112,7 @@
     ensureCursorVisible(cm);
     if (cm.curOp.updateInput < 2) { cm.curOp.updateInput = updateInput; }
     cm.curOp.typing = true;
-    cm.state.pasteIncoming = cm.state.cutIncoming = -1;
+    cm.state.pasteIncoming = cm.state.cutIncoming = false;
   }
 
   function handlePaste(e, cm) {
@@ -9273,7 +9273,7 @@
     on(te, "paste", function (e) {
       if (signalDOMEvent(cm, e) || handlePaste(e, cm)) { return }
 
-      cm.state.pasteIncoming = +new Date;
+      cm.state.pasteIncoming = true;
       input.fastPoll();
     });
 
@@ -9294,23 +9294,15 @@
           selectInput(te);
         }
       }
-      if (e.type == "cut") { cm.state.cutIncoming = +new Date; }
+      if (e.type == "cut") { cm.state.cutIncoming = true; }
     }
     on(te, "cut", prepareCopyCut);
     on(te, "copy", prepareCopyCut);
 
     on(display.scroller, "paste", function (e) {
       if (eventInWidget(display, e) || signalDOMEvent(cm, e)) { return }
-      if (!te.dispatchEvent) {
-        cm.state.pasteIncoming = +new Date;
-        input.focus();
-        return
-      }
-
-      // Pass the `paste` event to the textarea so it's handled by its event listener.
-      var event = new Event("paste");
-      event.clipboardData = e.clipboardData;
-      te.dispatchEvent(event);
+      cm.state.pasteIncoming = true;
+      input.focus();
     });
 
     // Prevent normal selection in the editor (we handle our own)
@@ -9733,7 +9725,7 @@
 
   addLegacyProps(CodeMirror);
 
-  CodeMirror.version = "5.44.0";
+  CodeMirror.version = "5.43.0";
 
   return CodeMirror;
 
