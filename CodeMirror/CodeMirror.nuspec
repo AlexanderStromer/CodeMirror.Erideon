@@ -8,6 +8,7 @@
 		<license type="expression">MIT</license>
 		<projectUrl>http://codemirror.net/</projectUrl>
 		<icon>images\logo.png</icon>
+		<iconUrl>https://codemirror.net/doc/logo.png</iconUrl
 		<description>CodeMirror is a versatile text editor implemented in JavaScript for the browser. Original source release.</description>
 		<releaseNotes>Contains js source and styles.</releaseNotes>
 		<copyright>Copyright 2021</copyright>
