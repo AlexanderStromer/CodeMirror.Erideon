@@ -1,6 +1,6 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
 	<metadata>
-		<id>CodeMirror.Public</id>
+		<id>CodeMirror.Erideon</id>
 		<version>5.35.0</version>
 		<authors>Marijn Haverbeke</authors>
 		<owners>Marijn Haverbeke</owners>
@@ -8,7 +8,7 @@
 		<license type="expression">MIT</license>
 		<projectUrl>http://codemirror.net/</projectUrl>
 		<icon>images\icon.png</icon>
-		<description>CodeMirror is a versatile text editor implemented in JavaScript for the browser.</description>
+		<description>CodeMirror is a versatile text editor implemented in JavaScript for the browser. Original source release.</description>
 		<releaseNotes>Contains js source and styles.</releaseNotes>
 		<copyright>Copyright 2021</copyright>
 	</metadata>
