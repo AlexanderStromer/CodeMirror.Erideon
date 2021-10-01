@@ -1,7 +1,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
 	<metadata>
 		<id>CodeMirror.Erideon</id>
-		<version>5.63.0</version>
+		<version>5.63.1</version>
 		<authors>Marijn Haverbeke</authors>
 		<owners>Marijn Haverbeke</owners>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -11,9 +11,7 @@
 		<iconUrl>https://codemirror.net/doc/logo.png</iconUrl>
 		<description>ORIGINAL RELEASES - but 3rd party maintained. CodeMirror is a versatile text editor implemented in JavaScript for the browser.</description>
 		<releaseNotes>
-- Fix scroll position jumping when scrolling a document with very different line heights. 
-- xml mode: Look up HTML element behavior in a case-insensitive way.
-- vim bindings: Support guu for case-changing.
+- Fix an issue with mouse scrolling on Chrome 94 Windows, which made scrolling by wheel move unusably slow.
 		</releaseNotes>
 		<copyright>Copyright 2021</copyright>
 	</metadata>
