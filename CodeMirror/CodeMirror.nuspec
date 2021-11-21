@@ -1,7 +1,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
 	<metadata>
 		<id>CodeMirror.Erideon</id>
-		<version>5.63.2</version>
+		<version>5.64.0</version>
 		<authors>Marijn Haverbeke</authors>
 		<owners>Marijn Haverbeke</owners>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -11,8 +11,9 @@
 		<iconUrl>https://codemirror.net/doc/logo.png</iconUrl>
 		<description>ORIGINAL RELEASES - but 3rd party maintained. CodeMirror is a versatile text editor implemented in JavaScript for the browser.</description>
 		<releaseNotes>
-- Prevent external styles from giving the hidden textarea a min-height.
-- Remove a stray autosave file that was part of the previous release.
+- Fix a crash that occurred in some situations with replacing marks across line breaks.
+- Make sure native scrollbars reset their position when hidden and re-shown.
+- vim bindings: Support C-u to delete back a line.
 		</releaseNotes>
 		<copyright>Copyright 2021</copyright>
 	</metadata>
