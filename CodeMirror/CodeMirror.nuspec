@@ -1,19 +1,18 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
 	<metadata>
 		<id>CodeMirror.Erideon</id>
-		<version>5.64.0</version>
+		<version>5.65.0</version>
 		<authors>Marijn Haverbeke</authors>
 		<owners>Marijn Haverbeke</owners>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<license type="expression">MIT</license>
-		<projectUrl>http://codemirror.net/</projectUrl>
+		<projectUrl>https://codemirror.net/</projectUrl>
 		<icon>images\logo.png</icon>
 		<iconUrl>https://codemirror.net/doc/logo.png</iconUrl>
 		<description>ORIGINAL RELEASES - but 3rd party maintained. CodeMirror is a versatile text editor implemented in JavaScript for the browser.</description>
 		<releaseNotes>
-- Fix a crash that occurred in some situations with replacing marks across line breaks.
-- Make sure native scrollbars reset their position when hidden and re-shown.
-- vim bindings: Support C-u to delete back a line.
+- brace-folding addon: Fix broken folding on lines with both braces and square brackets.
+- vim bindings: Support g0, g$, g&lt;Arrow&gt;.
 		</releaseNotes>
 		<copyright>Copyright 2021</copyright>
 	</metadata>
