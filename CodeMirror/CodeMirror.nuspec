@@ -1,7 +1,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
 	<metadata>
 		<id>CodeMirror.Erideon</id>
-		<version>5.65.0</version>
+		<version>5.65.1</version>
 		<authors>Marijn Haverbeke</authors>
 		<owners>Marijn Haverbeke</owners>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -11,8 +11,7 @@
 		<iconUrl>https://codemirror.net/doc/logo.png</iconUrl>
 		<description>ORIGINAL RELEASES - but 3rd party maintained. CodeMirror is a versatile text editor implemented in JavaScript for the browser.</description>
 		<releaseNotes>
-- brace-folding addon: Fix broken folding on lines with both braces and square brackets.
-- vim bindings: Support g0, g$, g&lt;Arrow&gt;.
+- Fix miscalculation of vertical positions in lines that have both line widgets and replaced newlines.
 		</releaseNotes>
 		<copyright>Copyright 2021</copyright>
 	</metadata>
