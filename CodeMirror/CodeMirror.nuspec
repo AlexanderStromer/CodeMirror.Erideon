@@ -1,7 +1,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
 	<metadata>
 		<id>CodeMirror.Erideon</id>
-		<version>5.65.1</version>
+		<version>5.65.2</version>
 		<authors>Marijn Haverbeke</authors>
 		<owners>Marijn Haverbeke</owners>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -11,8 +11,9 @@
 		<iconUrl>https://codemirror.net/doc/logo.png</iconUrl>
 		<description>ORIGINAL RELEASES - but 3rd party maintained. CodeMirror is a versatile text editor implemented in JavaScript for the browser.</description>
 		<releaseNotes>
-- Fix miscalculation of vertical positions in lines that have both line widgets and replaced newlines.
+- clike mode: Recognize triple quoted string in Java.
+- cypher mode: Fix handling of punctuation.
 		</releaseNotes>
-		<copyright>Copyright 2021</copyright>
+		<copyright>Copyright 2022</copyright>
 	</metadata>
 </package>
