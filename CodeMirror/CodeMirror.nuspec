@@ -1,7 +1,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
 	<metadata>
 		<id>CodeMirror.Erideon</id>
-		<version>5.65.4</version>
+		<version>5.65.5</version>
 		<authors>Marijn Haverbeke</authors>
 		<owners>Marijn Haverbeke</owners>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -11,9 +11,9 @@
 		<iconUrl>https://codemirror.net/doc/logo.png</iconUrl>
 		<description>ORIGINAL RELEASES - but 3rd party maintained. CodeMirror is a versatile text editor implemented in JavaScript for the browser.</description>
 		<releaseNotes>
-- Ignore paste events when the editor doesn’t have focus.
-- sparql mode: Fix parsing of variables after operators.
-- julia mode: Properly tokenize !== and === operators.
+- Work around a bug in Chrome 102 that caused wheel scrolling of the editor to constantly stop.
+- search addon: Make sure the search field has an accessible label.
+- comment addon: Preserve indentation on otherwise empty lines when indenting.
 		</releaseNotes>
 		<copyright>Copyright 2022</copyright>
 	</metadata>
