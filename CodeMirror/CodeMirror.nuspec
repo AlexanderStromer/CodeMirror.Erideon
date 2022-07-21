@@ -12,7 +12,7 @@
 		<description>ORIGINAL RELEASES of CodeMirror (NuGet package maintained by Erideon).
 			
 CodeMirror is a versatile text editor implemented in JavaScript for the browser.
-www.codemirror.net</description>
+https://codemirror.net/</description>
 		<releaseNotes>
 - Fix several references to the global document/window, improving support for creating an editor in another frame.
 - vim bindings: Use upstream code instead of keeping our own copy.
