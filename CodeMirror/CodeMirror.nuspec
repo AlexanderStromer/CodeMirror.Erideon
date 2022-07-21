@@ -1,7 +1,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
 	<metadata>
 		<id>CodeMirror.Erideon</id>
-		<version>5.65.6</version>
+		<version>5.65.7</version>
 		<authors>Marijn Haverbeke</authors>
 		<owners>Marijn Haverbeke</owners>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -9,12 +9,14 @@
 		<projectUrl>https://codemirror.net/</projectUrl>
 		<icon>images\logo.png</icon>
 		<iconUrl>https://codemirror.net/doc/logo.png</iconUrl>
-		<description>ORIGINAL RELEASES - but 3rd party maintained. CodeMirror is a versatile text editor implemented in JavaScript for the browser.</description>
+		<description>ORIGINAL RELEASES of CodeMirror (NuGet package maintained by Erideon).
+			
+CodeMirror is a versatile text editor implemented in JavaScript for the browser.
+www.codemirror.net</description>
 		<releaseNotes>
-- Avoid firing beforeCursorEnter callbacks twice for cursor selections.
-- Improve support for auto-hiding macOS scrollbars.
-- show-hint addon: Fix an issue where the tooltip could be placed to the left of the screen.
-- swift mode: Support structured concurrency keywords.
+- Fix several references to the global document/window, improving support for creating an editor in another frame.
+- vim bindings: Use upstream code instead of keeping our own copy.
+- tern addon: Properly HTML escape variable names in rename dialog.
 		</releaseNotes>
 		<copyright>Copyright 2022</copyright>
 	</metadata>
