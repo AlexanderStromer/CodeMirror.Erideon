@@ -1,7 +1,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
 	<metadata>
 		<id>CodeMirror.Erideon</id>
-		<version>5.65.7</version>
+		<version>5.65.8</version>
 		<authors>Marijn Haverbeke</authors>
 		<owners>Marijn Haverbeke</owners>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -14,9 +14,10 @@
 CodeMirror is a versatile text editor implemented in JavaScript for the browser.
 https://codemirror.net/</description>
 		<releaseNotes>
-- Fix several references to the global document/window, improving support for creating an editor in another frame.
-- vim bindings: Use upstream code instead of keeping our own copy.
-- tern addon: Properly HTML escape variable names in rename dialog.
+- Include direction override and isolate characters in the default set of special characters.
+- Fix an issue that could cause document corruption when mouse-selecting during composition.
+- foldgutter addon: Refresh markers when the editor’s mode changes.
+- merge addon: Fix syntax that prevented the addon from loading in IE10.
 		</releaseNotes>
 		<copyright>Copyright 2022</copyright>
 	</metadata>
