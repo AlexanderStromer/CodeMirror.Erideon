@@ -9,7 +9,7 @@
 		<projectUrl>https://codemirror.net/</projectUrl>
 		<icon>images\logo.png</icon>
 		<iconUrl>https://codemirror.net/doc/logo.png</iconUrl>
-		<description>ORIGINAL RELEASES of CodeMirror (NuGet package maintained by Erideon).
+		<description>ORIGINAL RELEASES of CodeMirror
 			
 CodeMirror is a versatile text editor implemented in JavaScript for the browser.
 https://codemirror.net/</description>
