@@ -1,0 +1,24 @@
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+	<metadata>
+		<id>CodeMirror.Erideon</id>
+		<version>5.65.9</version>
+		<authors>Marijn Haverbeke</authors>
+		<owners>Marijn Haverbeke</owners>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<license type="expression">MIT</license>
+		<projectUrl>https://codemirror.net/</projectUrl>
+		<icon>images\logo.png</icon>
+		<iconUrl>https://codemirror.net/doc/logo.png</iconUrl>
+		<description>ORIGINAL RELEASES of CodeMirror
+			
+CodeMirror is a versatile text editor implemented in JavaScript for the browser.
+https://codemirror.net/</description>
+		<releaseNotes>
+- Add a workaround for a regression in Chrome 105 that could cause content below the editor to not receive mouse events.
+- show-hint addon: Resize the tooltip if it doesn’t fit the screen.
+- swift mode: Fix tokenizing of block comments.
+- jinja2 mode: Support line statements.
+		</releaseNotes>
+		<copyright>Copyright 2022</copyright>
+	</metadata>
+</package>
