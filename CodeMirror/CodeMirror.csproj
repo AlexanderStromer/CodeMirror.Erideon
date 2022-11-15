@@ -1,36 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
-    <IncludeBuildOutput>false</IncludeBuildOutput>
-    <PackageId>$(AssemblyName).Erideon</PackageId>
-    <Authors>Marijn Haverbeke</Authors>
-    <Description>ORIGINAL RELEASES of CodeMirror
-   
-CodeMirror is a versatile text editor implemented in JavaScript for the browser.
-https://codemirror.net/</Description>
-    <Copyright>Copyright 2022</Copyright>
-    <PackageProjectUrl>https://codemirror.net/</PackageProjectUrl>
-    <PackageIcon>images\logo.png</PackageIcon>
-    <PackageIconUrl>https://codemirror.net/doc/logo.png</PackageIconUrl>
-    <PackageReleaseNotes>- Add a workaround for a regression in Chrome 105 that could cause content below the editor to not receive mouse events.
-- show-hint addon: Resize the tooltip if it doesn’t fit the screen.
-- swift mode: Fix tokenizing of block comments.
-- jinja2 mode: Support line statements.</PackageReleaseNotes>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
-  </PropertyGroup>
 
-    <ItemGroup>
-	    <None Update="content\**">
-		    <Pack>True</Pack>
-		    <PackagePath>\</PackagePath>
-	    </None>
-    </ItemGroup>
-	
-    <ItemGroup>
-        <None Update="images\logo.png">
-            <Pack>True</Pack>
-            <PackagePath>\</PackagePath>
-        </None>
-    </ItemGroup>
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+    </PropertyGroup>
 
 </Project>

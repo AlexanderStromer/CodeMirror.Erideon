@@ -10,13 +10,12 @@ CodeMirror does not have a v5 release package on NuGet. This package contains th
 
 ## CodeMirror Version updates
 Upon a new v5 release of CodeMirror, update the files as needed (replace all folders of the package and their contents) and ship as new NuGet version.
-Update the NuSpec file with the new version number and release notes
+Update the nuspec file with the new version number and release notes
 
 ## NuGet package update
-After all CodeMirror files are updated, navigate to the CodeMirror project folder and run the following command to create a new NuGet package version.
+After all CodeMirror files are updated, navigate to the CodeMirror solution folder and run the following command to create a new NuGet package version (PowerShell or other command line)
 
-dotnet pack -p:VersionPrefix=5.65.9 --output package
-(change version number as needed)
+./nuget pack CodeMirror/CodeMirror.nuspec
 
 Upload the resulting file to NuGet
 
