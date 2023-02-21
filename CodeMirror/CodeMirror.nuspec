@@ -1,7 +1,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
 	<metadata>
 		<id>CodeMirror.Erideon</id>
-		<version>5.65.11</version>
+		<version>5.65.12</version>
 		<authors>Marijn Haverbeke</authors>
 		<owners>Marijn Haverbeke</owners>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -14,9 +14,8 @@
 CodeMirror is a versatile text editor implemented in JavaScript for the browser.
 https://codemirror.net/</description>
 		<releaseNotes>
-- Also respect autocapitalize/autocorrect/spellcheck options in textarea mode.
-- sql-hint addon: Fix keyword completion in generic SQL mode.
+- python mode: Add new built-ins and keywords.
 		</releaseNotes>
-		<copyright>Copyright 2022</copyright>
+		<copyright>Copyright 2023</copyright>
 	</metadata>
 </package>
