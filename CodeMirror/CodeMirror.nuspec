@@ -1,7 +1,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
 	<metadata>
 		<id>CodeMirror.Erideon</id>
-		<version>5.65.13</version>
+		<version>5.65.14</version>
 		<authors>Marijn Haverbeke</authors>
 		<owners>Marijn Haverbeke</owners>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -14,8 +14,9 @@
 CodeMirror is a versatile text editor implemented in JavaScript for the browser.
 https://codemirror.net/</description>
 		<releaseNotes>
-- dart mode: Add some new keywords.
-- clike mode: Tokenize Scala character literals.
+- clike mode: Fix poor indentation in some Java code.
+- nsis mode: Recognize !assert command.
+- lint addon: Remove broken annotation deduplication.
 		</releaseNotes>
 		<copyright>Copyright 2023</copyright>
 	</metadata>
