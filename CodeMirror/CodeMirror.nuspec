@@ -1,7 +1,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
 	<metadata>
 		<id>CodeMirror.Erideon</id>
-		<version>5.65.16</version>
+		<version>5.65.17</version>
 		<authors>Marijn Haverbeke</authors>
 		<owners>Marijn Haverbeke</owners>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -14,9 +14,7 @@
 CodeMirror is a versatile text editor implemented in JavaScript for the browser.
 https://codemirror.net/</description>
 		<releaseNotes>
-- Fix focus tracking in shadow DOM.
-- go mode: Allow underscores in numbers.
-- jsx mode: Support TS generics marked by trailing comma.
+- crystal mode: Fix an infinite loop bug when tokenizing heredoc strings.
 		</releaseNotes>
 		<copyright>Copyright 2023</copyright>
 	</metadata>
