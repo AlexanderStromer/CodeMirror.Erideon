@@ -1,7 +1,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
 	<metadata>
 		<id>CodeMirror.Erideon</id>
-		<version>5.65.17</version>
+		<version>5.65.18</version>
 		<authors>Marijn Haverbeke</authors>
 		<owners>Marijn Haverbeke</owners>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -14,7 +14,8 @@
 CodeMirror is a versatile text editor implemented in JavaScript for the browser.
 https://codemirror.net/</description>
 		<releaseNotes>
-- crystal mode: Fix an infinite loop bug when tokenizing heredoc strings.
+- dart mode: Handle numeric separators.
+- groovy mode: Fix a bug in highlighting interpolated variable names.
 		</releaseNotes>
 		<copyright>Copyright 2023</copyright>
 	</metadata>
